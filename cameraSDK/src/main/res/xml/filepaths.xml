@@ -1,0 +1,10 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--更新安装apk-->
+    <external-path
+        name="files_root"
+        path="Android/data/com.muzhi.camerasdk/" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+
+</paths>

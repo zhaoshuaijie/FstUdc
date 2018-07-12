@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lcsd.fstudc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- CameraSDK相册选取编辑 -->
+        <activity android:name="com.muzhi.camerasdk.PhotoPickActivity" />
+        <activity android:name="com.muzhi.camerasdk.PreviewActivity" />
+        <activity android:name="com.muzhi.camerasdk.CropperImageActivity" />
+        <activity android:name="com.muzhi.camerasdk.FilterImageActivity" />
+        <activity android:name="com.muzhi.camerasdk.CutActivity" />
+        <activity android:name="com.muzhi.camerasdk.PhotoEnhanceActivity" />
+        <activity android:name="com.muzhi.camerasdk.GraffitiActivity" />
+
+        <activity
+            android:name=".ui.activity.ImageUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LiveImageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FoundImageLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.EditVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CutSizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GifUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CutTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AudioSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CutAudioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LiveImageContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LiveImageAddContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ninegridview.preview.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DraftsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ManuscriptListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.NewManuscriptActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

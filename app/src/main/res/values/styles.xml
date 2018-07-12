@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomRadioBtn">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:button">@drawable/radiobutton</item>
+    </style>
+    <style name="MultipleStatusView" />
+    <style name="MultipleStatusView.Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="record_voice_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/round_background</item>
+    </style>
+
+    <declare-styleable name="ScrollTrackView">
+        <attr name="background_color" format="color"></attr>
+        <attr name="foreground_color" format="color"></attr>
+        <attr name="space_size" format="dimension"></attr>
+        <attr name="track_item_width" format="dimension"></attr>
+        <attr name="track_fragment_count" format="integer"/>
+        <attr name="auto_run" format="boolean"/>
+        <attr name="cut_duration" format="integer"/>
+        <attr name="loop_run" format="boolean"/>
+    </declare-styleable>
+</resources>

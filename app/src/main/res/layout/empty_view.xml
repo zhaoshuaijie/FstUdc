@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/empty_retry_view"
+        android:layout_width="54dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_empty" />
+
+    <TextView
+        android:id="@+id/empty_view_tv"
+        style="@style/MultipleStatusView.Content"
+        android:layout_below="@id/empty_retry_view"
+        android:text="@string/empty_view_hint" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="74dp"/>
+</LinearLayout>
